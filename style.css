@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, blue, purple);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    background: white;
+    color: black;
+    border: 2px dashed gray;
+    padding: 20px;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    border-color: blue;
+}
+
+#file {
+    width: 100%;
+}
+
+.progress {
+    height: 6px;
+    background: lightgray;
+    width: 90%;
+    max-width: 450px;
+    margin: 15px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#bar {
+    height: 100%;
+    width: 0%;
+    background: green;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 220px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.steps {
+    background: white;
+    color: black;
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 90%;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Image Compressor</h1>
+    <p class="subtitle">Compress images easily and reduce file size</p>
+
+    <div class="upload-box" id="dropArea">
+        <input type="file" id="file" accept="image/png,image/jpeg">
+        <p>Drag & Drop Image Here or Click to Upload</p>
+    </div>
+
+    <div class="progress">
+        <div id="bar"></div>
+    </div>
+
+    <div class="preview">
+        <div class="card">
+            <h3>Original Image</h3>
+            <img id="original">
+            <p id="originalSize"></p>
+        </div>
+
+        <div class="card">
+            <h3>Compressed Image</h3>
+            <img id="compressed">
+            <p id="compressedSize"></p>
+        </div>
+    </div>
+
+    <button id="downloadBtn">Download</button>
+
+    <div class="steps">
+        <h2>How to Compress Images?</h2>
+        <p>1. Click the Choose file button or drag and drop an image.</p>
+        <p>2. The tool automatically compresses the image.</p>
+        <p>3. Click the Download button to save the compressed image.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
